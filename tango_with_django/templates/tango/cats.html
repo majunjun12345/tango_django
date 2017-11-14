@@ -1,0 +1,10 @@
+
+	{% if cats %}
+		<ul>
+			{% for cat in cats %}
+			<li>{{ cat.name }}</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p><strong>No categories presented!</strong></p>
+	{% endif %}

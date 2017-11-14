@@ -1,0 +1,20 @@
+{% extends 'tango/base.html' %}
+
+{% block body_block %}
+	<div>
+		{% if pages %}
+		<ul>
+			{% for page in pages %}
+			<li>
+				<!-- {{ page.title }} -->
+				<a href="{% url 'tango:details' category.slug page.slug %}">{{ page.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		{% else %}
+			<p><em>There are no pages in this category.</em></p>
+		{% endif %}
+		<a href="{% url 'tango:add_page' category.slug %}" type='button'>Add Page</a>
+	</div>
+	<p><a href="{% url 'tango:index' %}">Index</a></p>
+{% endblock %}

@@ -1,0 +1,9 @@
+Django==1.10.7
+django-registration-redux==1.4
+django-uuslug==1.1.8
+Markdown==2.6.8
+olefile==0.44
+Pillow==4.2.1
+PyMySQL==0.7.11
+python-slugify==1.2.4
+Unidecode==0.4.21
